@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="首先，我们要清楚class文件和tex文件的区别。我们日常进行排版都是通过编译tex文件来实现，而class文件则是一个宏观的定义，类似于html中的css文件，对排版的环境及需要的一些命令提前定义。例如，我们经常用到的\documentclass&amp;#123;article&amp;#125;，其中的art"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="returnhhh"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="class文件"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="首先，我们要清楚class文件和tex文件的区别。我们日常进行排版都是通过编译tex文件来实现，而class文件则是一个宏观的定义，类似于html中的css文件，对排版的环境及需要的一些命令提前定义。例如，我们经常用到的\documentclass&amp;#123;article&amp;#125;，其中的art"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="My Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://example.comimg/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://example.comimg/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>class文件 - My Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">returnhhh</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/returnfly/returnfly.github.io">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>class文件</h1>
+                    
+                    <h2 class="post-subheading">
+                        a little story
+                    </h2>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2020-03-18
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/LaTex/">#LaTex</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>首先，我们要清楚class文件和tex文件的区别。我们日常进行排版都是通过编译tex文件来实现，而class文件则是一个宏观的定义，类似于html中的css文件，对排版的环境及需要的一些命令提前定义。例如，我们经常用到的<code>\documentclass&#123;article&#125;</code>，其中的article便是一个class文件，我们使用的<strong>section</strong>等命令已经提前在其中定义。</p>
+<p>有时，当现有的一些<strong>class</strong>文件不能够满足我们的需求时或其使用起来较为繁琐时，我们便需要编写自己需要的<strong>class</strong>，这通常会使工作变得容易。</p>
+<p>本文为学习笔记，主要记录我的一些学习心得，因此很多时候我会以对代码进行解释的形式呈现。</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\NeedsTeXFormat</span>&#123;LaTeX2e&#125;[1995/12/01]</span><br><span class="line"><span class="keyword">\ProvidesClass</span>&#123;cumcmthesis&#125;</span><br><span class="line">              [2017/09/16 v2.6 Standard LaTeX Template for CUMCM]</span><br></pre></td></tr></table></figure>
+<p>这通常出现在<strong>class</strong>文件的顶端，类似于模板式的格式，在初学时可以不用做更改，但有一点需要注意，<strong>cumcmthesis</strong>为当前<strong>class</strong>文件的名字，即在引用时的名字，<code>\documentclass&#123;cumcmthesis&#125;</code>。</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\newif</span><span class="keyword">\if@mcm@bwprint</span><span class="keyword">\@mcm@bwprintfalse</span></span><br><span class="line"><span class="keyword">\newif</span><span class="keyword">\if@mcm@preface</span><span class="keyword">\@mcm@prefacetrue</span></span><br></pre></td></tr></table></figure>
+<p><code>\newif\if@mcm@bwprint\@mcm@bwprint</code>可以看作是创建一个布尔类型的变量，其名字为<code>@mcm@bwprint\@mcm@bwprint</code>，其初值为false，其引用类似：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\if@mcm@bwprint</span><span class="keyword">\@mcm@bwprint</span></span><br><span class="line">  <span class="comment">% Do other stuff</span></span><br><span class="line"><span class="keyword">\else</span></span><br><span class="line">  <span class="comment">% Do stuff</span></span><br><span class="line"><span class="keyword">\fi</span>   <span class="comment">%end</span></span><br></pre></td></tr></table></figure>
+<p>对于名字中的**@<strong>符号，其在</strong>latex**没有实际意义，可以看作名字间的分隔符，使名字更加易读。</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\newcommand</span>&#123;<span class="keyword">\R</span>&#125;&#123;<span class="keyword">\mathbb</span>&#123;R&#125;&#125;</span><br><span class="line"> </span><br><span class="line">The set of real numbers are usually represented </span><br><span class="line">by a blackboard bold capital r: <span class="keyword">\(</span> <span class="keyword">\R</span> <span class="keyword">\)</span>.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>   <img src="https://raw.githubusercontent.com/returnfly/returnfly.github.io/master/images/latex-class-1.png" alt="上述代码运行结果"><br>语句<code>\ newcommand &#123;\ R&#125; &#123;\ mathbb &#123;R&#125;&#125;</code>有两个定义新命令的参数，<code>\R</code>是新命令的名称。<code>\ mathbb &#123;R&#125;</code>，是新命令的作用。 在这种情况下，字母 <em>R</em> 将以黑板黑体字写成（要使用<code>\mathbb</code>，需要使用软件包<em>amssymb</em>）。</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\DeclareOption</span>&#123;withoutpreface&#125;&#123;<span class="keyword">\@mcm@prefacefalse</span>&#125;</span><br><span class="line"><span class="keyword">\DeclareOption</span>*&#123;<span class="keyword">\PassOptionsToClass</span>&#123;<span class="keyword">\CurrentOption</span>&#125;&#123;article&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>latex</strong>中会有一些选项，作为执行命令的参数，类似于设定一些特定的使用环境。<br>命令<code>\ DeclareOption &#123;&#125; &#123;&#125;</code>处理给定的选项。 它有两个参数，第一个是选项的名称，第二个是如果传递选项则要执行的代码。<br>命令<code>\ Declareoption * &#123;&#125;</code>处理未明确定义的每个选项，即命令的默认选项。 它仅需一个参数，即传递未知选项时执行的代码。<br><code>\ PassOptionsToClass &#123;&#125; &#123;&#125;</code>， 将第一对大括号内的选项传递给第二对大括号内设置的文档类。 在该示例中，所有未知选项都将传递到<strong>article</strong>类。<br>``\CurrentOption`表示在确定的时刻要处理的类选项的名称。<br>对第二条命令，我的理解是，如果未设置选项，则按<strong>article</strong>来执行。</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\ExecuteOptions</span>&#123;colorprint&#125;</span><br><span class="line"><span class="keyword">\ProcessOptions</span><span class="keyword">\relax</span></span><br></pre></td></tr></table></figure>
+<p><code>\ExecuteOptions&#123;colorprint&#125;</code>表示对所有命令预先执行此选项，<br><code>\ProcessOptions\relax</code>为每个选项执行代码，并且在键入所有选项处理命令之后必须将其插入。 该命令有一个加星标的版本，它将按照调用命令指定的确切顺序执行选项。</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/returnfly" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2021 returnhhh<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

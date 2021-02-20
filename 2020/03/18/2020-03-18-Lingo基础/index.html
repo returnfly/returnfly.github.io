@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="代码模板$$\min  2x_1+3x_2\s.t.\left{ \begin{array}{c}    x_1+x_2\geqslant 350\    x_1\geqslant 100\    2x_1+x_2\leqslant 600\    x_1,x_2\geqslant 0\\end{a"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="returnhhh"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Lingo基础"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="代码模板$$\min  2x_1+3x_2\s.t.\left{ \begin{array}{c}    x_1+x_2\geqslant 350\    x_1\geqslant 100\    2x_1+x_2\leqslant 600\    x_1,x_2\geqslant 0\\end{a"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="My Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://example.comimg/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://example.comimg/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Lingo基础 - My Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">returnhhh</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/returnfly/returnfly.github.io">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Lingo基础</h1>
+                    
+                    <h2 class="post-subheading">
+                        a little story
+                    </h2>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2020-03-18
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Lingo/">#Lingo</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="代码模板"><a href="#代码模板" class="headerlink" title="代码模板"></a>代码模板</h2><p>$$<br>\min  2x_1+3x_2<br>\<br>s.t.\left{ \begin{array}{c}<br>    x_1+x_2\geqslant 350\<br>    x_1\geqslant 100\<br>    2x_1+x_2\leqslant 600\<br>    x_1,x_2\geqslant 0\<br>\end{array} \right.<br>$$</p>
+<p>如上所示的简单线性规划问题，利用<strong>LINGO</strong>求解代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">model:</span><br><span class="line">Title:求解规划问题;</span><br><span class="line">SETS:</span><br><span class="line">S&#x2F;1..2&#x2F;:X;</span><br><span class="line">ENDSETS</span><br><span class="line">MIN&#x3D;2*X1+3*X2;</span><br><span class="line">X1+X2&gt;350;</span><br><span class="line">X1&gt;100;</span><br><span class="line">2*X1+X2&lt;600;</span><br><span class="line">END</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/returnfly/returnfly.github.io/master/images/Lingo%E5%9F%BA%E7%A1%80-1.jpg" alt="运行结果"></p>
+<p>其中，Title为可选，不一定要出现。关于<strong>LINGO</strong>代码，有以下几点需要注意：</p>
+<ol>
+<li>每一条语句以 <strong>;</strong> 结尾，但是标记语言除外，如<code>SET...ENDSETS</code>。</li>
+<li><strong>LINGO</strong>中变量默认所有的变量是非负的，并且在<strong>LINGO</strong>中没有 <strong>≥</strong> 等符号，只能表示单一的大于，小于或等于。</li>
+<li>在<strong>LINGO</strong>中，无大小写区分。</li>
+<li><strong>LINGO</strong>中函数以 <strong>@</strong> 开头，如<code>@SUM();@FOR()</code>等。</li>
+<li><strong>LINGO</strong>中注释语句以 <strong>!</strong> 开头，以 <strong>;</strong> 结尾，允许跨行。</li>
+</ol>
+<p><strong>Lingo</strong>模型由 4 个部分构成：目标与约束，集合，数据，初始。<strong>Lingo</strong> 中有三类运算符：算术运算符，逻辑运算符和关系运算符。运算符的优先级如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">优先级</th>
+<th align="center">运算符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">最高</td>
+<td align="center">#NOT# ，－（负号）</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">^</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">* ，/</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">+，－（减号）</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">#EQ#，#NE#，#GE#，#GT#，#LE#，#LT#</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">#AND#，#OR#</td>
+</tr>
+<tr>
+<td align="center">最低</td>
+<td align="center">&lt;，＝，&gt;</td>
+</tr>
+</tbody></table>
+<p>LINGO 具有９种逻辑运算符:</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">#eq#</td>
+<td align="center">若两个运算数相等，则为true；否则为flase</td>
+</tr>
+<tr>
+<td align="center">#not#</td>
+<td align="center">否定该操作数的逻辑值， ＃not＃是一个一元运算符</td>
+</tr>
+<tr>
+<td align="center">#ne#</td>
+<td align="center">若两个运算符不相等，则为true；否则为flase</td>
+</tr>
+<tr>
+<td align="center">#gt#</td>
+<td align="center">若左边的运算符严格大于右边的运算符，则为true；否则为flase</td>
+</tr>
+<tr>
+<td align="center">#ge#</td>
+<td align="center">若左边的运算符大于或等于右边的运算符，则为true；否则为flase</td>
+</tr>
+<tr>
+<td align="center">#lt#</td>
+<td align="center">若左边的运算符严格小于于右边的运算符，则为true；否则为flase</td>
+</tr>
+<tr>
+<td align="center">#le#</td>
+<td align="center">若左边的运算符小于或等于右边的运算符，则为true；否则为flase</td>
+</tr>
+<tr>
+<td align="center">#and#</td>
+<td align="center">仅当两个参数都为true时，结果为true；否则为flase</td>
+</tr>
+<tr>
+<td align="center">#or#</td>
+<td align="center">仅当两个参数都为flase时，结果为flase；否则为flase</td>
+</tr>
+</tbody></table>
+<h2 id="LINGO-中的集"><a href="#LINGO-中的集" class="headerlink" title="LINGO 中的集"></a>LINGO 中的集</h2><p>对实际问题建模的时候，总会遇到一群或多群相联系的对象，比如工厂、消费者群体、交通工具和雇工等等。LINGO 允许把这些相联系的对象聚合成集（sets）。简单来说，假设雇工代号为<strong>X</strong>,有10名雇工，<code>SETS</code>便是假设了十个变量<code>x1,...,x10</code>。</p>
+<p>LINGO 有两种类型的集：原始集(primitive set)和派生集(derived set)。</p>
+<ul>
+<li><p>一个原始集是由一些最基本的对象组成的。</p>
+</li>
+<li><p>一个派生集是用一个或多个其它集来定义的，也就是说，它的成员来自于其它已存<br>在的集。</p>
+</li>
+</ul>
+<h3 id="原始集"><a href="#原始集" class="headerlink" title="原始集"></a>原始集</h3><p>一个原始集的定义格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SETS:</span><br><span class="line">setname&#x2F;1..N&#x2F;:attribute_list;   !注意，中间分割为两个点,此处仅介绍隐式罗列；</span><br><span class="line">ENDSETS</span><br></pre></td></tr></table></figure>
+<p><code>Setname</code> 是你选择的来标记集的名字，最好具有较强的可读性。集名字必须严格符合标准命名规则：以拉丁字母或下划线（_）为首字符，其后由字母（A-Z）、下划线、阿拉伯数字（0，1，…，9）组成的总长度不超过 32 个字符的字符串，且不区分大小写。</p>
+<blockquote>
+<p>注意：该命名规则同样适用于集成员名和属性名等的命名。</p>
+</blockquote>
+<p><code>attribute_list</code>相当于上边所说的雇工的名称，可以理解为集合的属性。</p>
+<p>一些成员罗列示例：</p>
+<table>
+<thead>
+<tr>
+<th align="center">成员列表格式</th>
+<th align="center">示例</th>
+<th align="center">所产生集成员</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1..n</td>
+<td align="center">1..5</td>
+<td align="center">1,2,3,4,5</td>
+</tr>
+<tr>
+<td align="center">StringM..StringN</td>
+<td align="center">Car2..car14</td>
+<td align="center">Car2,Car3,Car4,…,Car14</td>
+</tr>
+<tr>
+<td align="center">DayM..DayN</td>
+<td align="center">Mon..Fri</td>
+<td align="center">Mon,Tue,Wed,Thu,Fri</td>
+</tr>
+<tr>
+<td align="center">MonthM..MonthN</td>
+<td align="center">Oct..Jan</td>
+<td align="center">Oct,Nov,Dec,Jan</td>
+</tr>
+<tr>
+<td align="center">MonthYearM..MonthYearN</td>
+<td align="center">Oct2001..Jan2002</td>
+<td align="center">Oct2001,Nov2001,Dec2001,Jan2002</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>可以把集、集成员和集属性同 C 语言中的结构体作个类比。如下所示：<br>                                                                       集    ←→   结构体<br>                                                                集成员   ←→   结构体的域<br>                                                                集属性   ←→   结构体实例</p>
+</blockquote>
+<h3 id="派生集"><a href="#派生集" class="headerlink" title="派生集"></a>派生集</h3><p>一个派生集的定义格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sets:</span><br><span class="line">product&#x2F;A B&#x2F;;</span><br><span class="line">machine&#x2F;M N&#x2F;;</span><br><span class="line">week&#x2F;1..2&#x2F;;</span><br><span class="line">allowed(product,machine,week):x;</span><br><span class="line">endsets</span><br></pre></td></tr></table></figure>
+<p>其中<code>allowed</code>便是派生集，LINGO 生成了三个父集的所有组合共八组作为 allowed 集的成员。列表如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">编号</th>
+<th align="center">成员</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">(A,M,1)</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">(A,M,2)</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">(A,N,1)</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">(A,N,2)</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">(B,M,1)</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">(B,M,2)</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">(B,N,1)</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">(B,N,2)</td>
+</tr>
+</tbody></table>
+<h3 id="稀疏集"><a href="#稀疏集" class="headerlink" title="稀疏集"></a>稀疏集</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">sets:</span><br><span class="line">!学生集：性别属性 sex，1 表示男性，0 表示女性；年龄属性 age. ;</span><br><span class="line">students&#x2F;John,Jill,Rose,Mike&#x2F;:sex,age;</span><br><span class="line">!男学生和女学生的联系集：友好程度属性 friend，[0，1]之间的数。 ;</span><br><span class="line">linkmf(students,students)|sex(&amp;1) #eq# 1 #and# sex(&amp;2) #eq# 0:</span><br><span class="line">friend;</span><br><span class="line">!男学生和女学生的友好程度大于 0.5 的集;</span><br><span class="line">linkmf2(linkmf) | friend(&amp;1,&amp;2) #gt# 0.5 : x;</span><br><span class="line">endsets</span><br><span class="line">data:</span><br><span class="line">sex,age &#x3D; 1 16</span><br><span class="line">0 14</span><br><span class="line">0 17</span><br><span class="line">0 13;</span><br><span class="line">friend &#x3D; 0.3 0.5 0.6;</span><br><span class="line">enddata</span><br></pre></td></tr></table></figure>
+<p>用竖线(|)来标记一个成员资格过滤器的开始。#eq#是逻辑运算符，用来判断是否“相等”，可参考§4。&amp;1可看作派生集的第1个原始父集的索引它取遍该原始父集的所有成员；&amp;2可看作派生集的第2个原始父集的索引，它取遍该原始父集的所有成员；&amp;3，&amp;4，……，以此类推。注意如果派生集B的父集是另外的派生集A，那么上面所说的原始父集是集A向前回溯到最终的原始集，其顺序保持不变，并且派生集A的过滤器对派生集B仍然有效。因此，派生集的索引个数是最终原始父集的个数，索引的取值是从原始父集到当前派生集所作限制的总和。</p>
+<h2 id="模型的数据部分"><a href="#模型的数据部分" class="headerlink" title="模型的数据部分"></a>模型的数据部分</h2><p>首先给出集合数据部分代码模板：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sets:</span><br><span class="line">set1&#x2F;1..3&#x2F;: X,Y;</span><br><span class="line">set2(X,Y):Z;</span><br><span class="line">endsets</span><br><span class="line">data:</span><br><span class="line">X&#x3D;1,2,3;</span><br><span class="line">Y&#x3D;4,5,6;</span><br><span class="line">Z&#x3D;1,2,3</span><br><span class="line">4,5,6</span><br><span class="line">7,8,9;</span><br><span class="line">enddata</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>可以看出，每一个数据之间由逗号分隔。特殊的，对于派生集合，可以这样来理解，X所属的集合有3个成员，Y所属的集合有3个成员，派生集合可以看作3×3矩阵，每一行赋值结束后换行即可。</p>
+</li>
+<li><p>有时指定属性为一个值，例如</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sets:</span><br><span class="line">days &#x2F;MO,TU,WE,TH,FR,SA,SU&#x2F;:needs;</span><br><span class="line">endsets</span><br><span class="line">data:</span><br><span class="line">needs &#x3D; 20;</span><br><span class="line">enddata</span><br></pre></td></tr></table></figure>
+<p><strong>LINGO</strong> 将用 20 指定 days 集的所有成员的 needs 属性。对于多个属性的情形，见下例。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sets:</span><br><span class="line">days &#x2F;MO,TU,WE,TH,FR,SA,SU&#x2F;:needs,cost;</span><br><span class="line">endsets</span><br><span class="line">data:</span><br><span class="line">needs cost &#x3D; 20 100;</span><br><span class="line">enddata</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>有时只想为一个集的部分成员的某个属性指定值，而让其余成员的该属性保持未<br>知，以便让 LINGO 去求出它们的最优值。在数据声明中输入两个相连的逗号表示该位置<br>对应的集成员的属性值未知。两个逗号间可以有空格。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sets:</span><br><span class="line">years&#x2F;1..5&#x2F;: capacity;</span><br><span class="line">endsets</span><br><span class="line">data:</span><br><span class="line">capacity &#x3D; ,34,20,,;</span><br><span class="line">enddata</span><br></pre></td></tr></table></figure>
+<p>属性 capacity 的第 2 个和第 3 个值分别为 34 和 20，其余的未知。</p>
+</li>
+</ul>
+<h2 id="模型的初始部分"><a href="#模型的初始部分" class="headerlink" title="模型的初始部分"></a>模型的初始部分</h2><p>初始部分是 LINGO 提供的另一个可选部分。在初始部分中，可以输入初始声明，和数据部分中的数据声明相同。对实际问题的建模时，初始部分并不起到描述模型的作用，在初始部分输入的值仅被 LINGO 求解器当作初始点<br>来用，并且仅仅对非线性模型有用。和数据部分指定变量的值不同，LINGO 求解器可以<br>自由改变初始部分初始化的变量的值。例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">init:</span><br><span class="line">X, Y &#x3D; 0, .1;</span><br><span class="line">endinit</span><br><span class="line">Y&#x3D;@log(X);</span><br><span class="line">X^2+Y^2&lt;&#x3D;1;</span><br></pre></td></tr></table></figure>
+<h2 id="LINGO-函数"><a href="#LINGO-函数" class="headerlink" title="LINGO 函数"></a>LINGO 函数</h2><ul>
+<li><h3 id="SUM"><a href="#SUM" class="headerlink" title="@SUM()"></a>@SUM()</h3><p>该函数返回遍历指定的集成员的一个表达式的和。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">model:</span><br><span class="line">data:</span><br><span class="line">N&#x3D;6;</span><br><span class="line">enddata</span><br><span class="line">sets:</span><br><span class="line">number&#x2F;1..N&#x2F;:x;</span><br><span class="line">endsets</span><br><span class="line">data:</span><br><span class="line">x &#x3D; 5 1 3 4 6 10;</span><br><span class="line">enddata</span><br><span class="line">s&#x3D;@sum(number(I) | I #le# 5: x);</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p>上述求向量[5，1，3，4，6，10]前 5 个数的和。</p>
+</li>
+<li><h3 id="FOR"><a href="#FOR" class="headerlink" title="@FOR()"></a>@FOR()</h3><p>该函数用来产生对集成员的约束。基于建模语言的标量需要显式输入每个约束，不<br>过@for 函数允许只输入一个约束，然后 LINGO 自动产生每个集成员的约束。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">model:</span><br><span class="line">sets:</span><br><span class="line">number&#x2F;1..5&#x2F;:x;</span><br><span class="line">endsets</span><br><span class="line">@for(number(I): x(I)&#x3D;I^2);</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p>上述将 产生序列{1,4,9,16,25}。number(I)的含义可以看作是集合中的第I个成员。</p>
+<p>对于较为复杂一点的，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">MODEL:</span><br><span class="line">TITLE:练习;</span><br><span class="line">SETS:</span><br><span class="line">S&#x2F;1..3&#x2F;:K,C;</span><br><span class="line">LINKS(S,S):M,X;</span><br><span class="line">ENDSETS</span><br><span class="line">DATA:</span><br><span class="line">M&#x3D;6,2,6</span><br><span class="line">4,9,5</span><br><span class="line">5,2,1;</span><br><span class="line">C&#x3D;60,55,51;</span><br><span class="line">K&#x3D;35,37,22;</span><br><span class="line">ENDDATA</span><br><span class="line">MIN&#x3D;@SUM(LINKS:M*X);</span><br><span class="line">@FOR(S(I):@SUM(LINKS(I,J):X(I,J))&lt;C(I));</span><br><span class="line">@FOR(S(J):@SUM(LINKS(I,J):X(I,J))&#x3D;K(J));</span><br><span class="line">@FOR(LINKS(I,J):@GIN(X(I,J)));</span><br><span class="line">END</span><br></pre></td></tr></table></figure>
+<p>其实，<strong>LINGO</strong>中的<strong>FOR</strong>函数可以把它理解为如下的C语言代码：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> I;I&lt;N;I++)</span><br><span class="line">&#123;</span><br><span class="line">   <span class="comment">//sum(LINKS(I,J):X(I,J))&lt;C(I)</span></span><br><span class="line">   <span class="comment">//这其中J不是循环变量，表示在每一次循环中，对所有的J都成立，这可能也是LINGO的特殊之处</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="其它一些常用函数"><a href="#其它一些常用函数" class="headerlink" title="其它一些常用函数"></a>其它一些常用函数</h3><ul>
+<li><p><strong>@GIN(X)</strong></p>
+<p>表示X的值全为整数。</p>
+</li>
+<li><p><strong>@BIN()</strong></p>
+<p>表示X的值为0或1，即我们常用的0、1变量。</p>
+</li>
+<li><p><strong>@bnd(L,x,U)</strong></p>
+<p>限制 L≤x≤U.</p>
+</li>
+<li><p><strong>@free(x)</strong></p>
+<p>取消对变量 x 的默认下界为 0 的限制，即 x 可以取任意实数。</p>
+</li>
+<li><p><strong>@in(set_name,primitive_index_1 [,primitive_index_2,…])</strong><br>如果元素在指定集中，返回 1；否则返回 0。例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sets:</span><br><span class="line">I&#x2F;x1..x4&#x2F;:x;</span><br><span class="line">B(I)&#x2F;x2&#x2F;:y;</span><br><span class="line">C(I)|#not#@in(B,&amp;1):z;</span><br><span class="line">endsets</span><br></pre></td></tr></table></figure>
+<p>全集为 I，B 是 I 的一个子集，C 是 B 的补集。</p>
+</li>
+<li><p><strong>@index([set_name,] primitive_set_element)</strong><br>该函数返回在集 set_name 中原始集成员 primitive_set_element 的索引。如果<br>set_name 被忽略，那么 LINGO 将返回与 primitive_set_element 匹配的第一个原始集<br>成员的索引。如果找不到，则产生一个错误。例：</p>
+<p>如何确定集成员(B,Y)属于派生集 S3。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sets:</span><br><span class="line">S1&#x2F;A B C&#x2F;;</span><br><span class="line">S2&#x2F;X Y Z&#x2F;;</span><br><span class="line">S3(S1,S2)&#x2F;A X, A Z, B Y, C X&#x2F;;</span><br><span class="line">endsets</span><br><span class="line">X&#x3D;@in(S3,@index(S1,B),@index(S2,Y));</span><br></pre></td></tr></table></figure>
+<p>看下面的例子，表明有时为@index 指定集是必要的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sets:</span><br><span class="line">girls&#x2F;debble,sue,alice&#x2F;;</span><br><span class="line">boys&#x2F;bob,joe,sue,fred&#x2F;;</span><br><span class="line">endsets</span><br><span class="line">I1&#x3D;@index(sue);</span><br><span class="line">I2&#x3D;@index(boys,sue);</span><br></pre></td></tr></table></figure>
+<p>I1 的值是 2，I2 的值是 3。我们建议在使用@index 函数时最好指定集。</p>
+</li>
+<li><p><strong>@size(set_name)</strong><br>该函数返回集 set_name 的成员个数。在模型中明确给出集大小时最好使用该函数。<br>它的使用使模型更加数据中立，集大小改变时也更易维护。</p>
+</li>
+<li><p><strong>集循环函数</strong><br>集循环函数遍历整个集进行操作。其语法为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@function(setname[(set_index_list)[|conditional_qualifier]]:</span><br><span class="line">expression_list);</span><br></pre></td></tr></table></figure>
+<p>@function 相应于下面罗列的四个集循环函数之一；setname 是要遍历的集；set_<br>index_list 是集索引列表；conditional_qualifier 是用来限制集循环函数的范围，当<br>集循环函数遍历集的每个成员时，LINGO 都要对 conditional_qualifier 进行评价，若<br>结果为真，则对该成员执行@function 操作，否则跳过，继续执行下一次循环。<br>expression_list 是被应用到每个集成员的表达式列表，当用的是@for 函数时，<br>expression_list 可以包含多个表达式，其间用逗号隔开。这些表达式将被作为约束加<br>到模型中。当使用其余的三个集循环函数时，expression_list 只能有一个表达式。如<br>果省略 set_index_list，那么在 expression_list 中引用的所有属性的类型都是<br>setname 集。</p>
+</li>
+<li><p><strong>@MIN() 和@MAX()</strong></p>
+<p>返回指定的集成员的一个表达式的最小值或最大值。</p>
+</li>
+<li><p><strong>@wrap(index,limit)</strong></p>
+<p>该函数返回j=index-k*limit，其中k是一个整数，取适当值保证j落在区间[1,limit]内。==该函数相当于index模limit再加1==.该函数在循环、多阶段计划编制中特别有用。</p>
+</li>
+</ul>
+<p>下面看一个稍微复杂一点儿的例子。</p>
+<p><em>（职员时序安排模型）一项工作一周 7 天都需要有人（比如护士工作），每天（周一至周日）所需的最少职员数为 20、16、13、16、19、14 和 12，并要求每个职员一周连续工作 5 天，试求每周所需最少职员数，并给出安排。<strong>注意这里我们考虑稳定后的情况。</strong></em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">model:</span><br><span class="line">sets:</span><br><span class="line">days&#x2F;mon..sun&#x2F;: required,start;</span><br><span class="line">endsets</span><br><span class="line">data:</span><br><span class="line">!每天所需的最少职员数;</span><br><span class="line">required &#x3D; 20 16 13 16 19 14 12;</span><br><span class="line">enddata</span><br><span class="line">!最小化每周所需职员数;</span><br><span class="line">min&#x3D;@sum(days: start);</span><br><span class="line">@for(days(J):@sum(days(I) | I #le# 5:</span><br><span class="line">start(@wrap(J+I-5,7))) &gt;&#x3D; required(J));！尝试理解为时间的加减</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p>运行结果为：</p>
+<p><img src="https://raw.githubusercontent.com/returnfly/returnfly.github.io/master/images/Lingo%E5%9F%BA%E7%A1%80-2.jpg" alt="运行结果"></p>
+<p>从而解决方案是：每周最少需要 22 个职员，周一安排 8 人，周二安排 2 人，周三无需<br>安排人，周四安排 6 人，周五和周六都安排 3 人，周日无需安排人。</p>
+</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/returnfly" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2021 returnhhh<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
